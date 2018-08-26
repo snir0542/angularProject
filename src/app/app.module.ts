@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule}from '@angular/forms'
+import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
@@ -10,6 +11,9 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
+import { AppGameComponent } from './app-game/app-game.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,10 +23,13 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    OddComponent,
+    EvenComponent,
+    AppGameComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
